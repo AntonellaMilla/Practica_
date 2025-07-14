@@ -7,20 +7,21 @@ function Hero() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        height: '400px',
-        position: 'relative'
+        minHeight: '90vh', // MÁS GRANDE: ocupa casi toda la pantalla
+        position: 'relative',
+        overflow: 'hidden'
       }}
     >
-      {/* Capa oscura semitransparente para mejorar contraste */}
+      {/* Capa oscura semitransparente para contraste */}
       <div
         className="position-absolute top-0 start-0 w-100 h-100"
-        style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: 0 }}
       ></div>
 
       {/* Contenido sobre la capa */}
-      <div className="container position-relative z-1">
-        <h1 className="display-4 fw-bold">Bienvenido al Universo Dragon Ball</h1>
-        <p className="lead mt-3">
+      <div className="container position-relative" style={{ zIndex: 1 }}>
+        <h1 className="display-2 fw-bold">Bienvenido al Universo Dragon Ball</h1>
+        <p className="lead fs-4 mt-3">
           Explora personajes, poderes y transformaciones de tus héroes favoritos
         </p>
       </div>

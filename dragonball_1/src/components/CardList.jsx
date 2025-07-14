@@ -8,6 +8,7 @@ function CardList({ items }) {
       {items.map((item) => (
         <div className="col d-flex" key={item.id}>
           <Card
+            id={item.id} // ✅ Aquí estaba el problema
             name={item.name}
             ki={item.ki}
             maxKi={item.maxKi}

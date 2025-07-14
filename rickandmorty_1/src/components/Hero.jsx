@@ -7,9 +7,11 @@ function Hero() {
         minHeight: "60vh",
         backgroundImage: `
           linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url('https://rickandmortyapi.com/api/character/avatar/125.jpeg')
+          url('https://wallpapercave.com/wp/wp3277657.jpg')
         `,
-
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="container">

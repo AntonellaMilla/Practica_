@@ -4,6 +4,7 @@ import Layout from "./layout/Layout";
 import Home from "./pages/Home";
 import ItemList from "./pages/ItemList";
 import Contact from "./pages/Contact";
+import CharacterDetail from "./pages/CharacterDetail"; // ✅ Importar la vista de detalle
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="list" element={<ItemList />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="detail/:id" element={<CharacterDetail />} /> {/* ✅ Ruta agregada */}
       </Route>
     </Routes>
   );
